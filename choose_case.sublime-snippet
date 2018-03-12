@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+choose case ${1:testexpression}
+	case ${2:expressionlist}
+		${3:statementblock}
+	case ${2:expressionlist} 
+		${3:statementblock}
+	case else
+		${3:statementblock}
+end choose
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>choose</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.pb</scope>
+</snippet>

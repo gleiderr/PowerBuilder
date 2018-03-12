@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+uo_${2:descricao} uo${1:scope}_$2
+uo${1:scope}_$2 = create uo_$2
+destroy uo${1:scope}_$2
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>create_destroy</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.pb</scope>
+</snippet>

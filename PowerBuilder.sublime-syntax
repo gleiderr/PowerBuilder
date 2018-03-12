@@ -1,0 +1,105 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: PowerBuilder
+file_extensions: [sru]
+scope: source.pb
+variables:
+  ident: '[A-Za-z_0-9]*'
+contexts:
+  main:
+    - match: \b(?i:if|then|else|elseif|end if)\b
+      scope: keyword.control.conditional.pb
+
+    - match: \b(?i:choose case|case|case else|end choose)\b
+      scope: keyword.control.conditional.pb
+
+    - match: \b(?i:do while|loop|exit)\b
+      scope: keyword.control.conditional.pb
+
+    - match: \b(?i:for|to|next|exit)\b
+      scope: keyword.control.conditional.pb
+
+    - match: \b(?i:try|catch|finally|end try)\b
+      scope: keyword.control.pb
+
+    - match: \b(?i:create)\b
+      scope: entity.name.constructor.pb
+
+    - match: \b(?i:destroy)\b
+      scope: entity.name.destructor.pb
+
+    - match: \b(?i:return)\b
+      scope: keyword.control.pb
+
+    - match: \b(?i:boolean|integer|long|String|double|decimal|datawindowchild|datetime|singlelineedit)\b
+      scope: storage.type.pb
+
+    - match: \b(?i:uo_){{ident}}\b
+      scope: storage.type.pb
+
+    - match: \b(?i:uol_|vli|vldb|vib|w_){{ident}}\b
+      scope: variable.pb
+
+    - match: \b(?i:f_|of_|wf_){{ident}}\b
+      scope: variable.function.pb
+
+    - match: \b[0-9]+(\.[0-9]+)?\b
+      scope: constant.numeric.pb
+
+    - match: \b(?i:true|false)\b
+      scope: constant.language.pb
+
+    - match: '{{ident}}(!)'
+      scope: constant.language.pb
+
+    - match: \b(?i:and|or|not)\b
+      scope: keyword.operator.word.pb
+
+    - match: '&'
+      scope: punctuation.separator.continuation.pb
+
+    - match: \b(?i:forward|global|type|within|end type|from|variables|end variables)\b
+      scope: keyword
+
+    - match: \b(?i:event|end event|constant|public|function|end function|on|end on)\b
+      scope: variable.function
+
+    - match: (")
+      push:
+        - meta_scope: string.quoted.double.c
+        - match: ~.
+          scope: constant.character.scape.c
+        - match: (")
+          pop: true
+
+    - match: (')
+      push:
+        - meta_scope: string.quoted.single.c
+        - match: ~.
+          scope: constant.character.scape.c
+        - match: (')
+          pop: true
+
+    - match: //
+      scope: punctuation.definition.comment.pb
+      push:
+        - meta_scope: comment.line
+        - match: \n
+          pop: true
+
+    - match: /\*
+      scope: punctuation.definition.comment.pb
+      push:
+        - meta_scope: comment.block.pb
+        - match: \*/
+          scope: punctuation.definition.comment.pb
+          pop: true
+
+    - match: \b(?i:select|insert|update|delete)\b
+      scope: keyword.other.DML.sql
+      push: "Packages/SQL/SQL.sublime-syntax"
+      with_prototype:
+        - match: ;
+          pop: true
+    
