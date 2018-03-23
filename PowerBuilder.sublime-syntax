@@ -14,10 +14,10 @@ contexts:
     - match: \b(?i:choose case|case|case else|end choose)\b
       scope: keyword.control.conditional.pb
 
-    - match: \b(?i:do while|loop|exit)\b
+    - match: \b(?i:do while|loop|exit|continue)\b
       scope: keyword.control.conditional.pb
 
-    - match: \b(?i:for|to|next|exit)\b
+    - match: \b(?i:for|to|next|exit|continue)\b
       scope: keyword.control.conditional.pb
 
     - match: \b(?i:try|catch|finally|end try)\b

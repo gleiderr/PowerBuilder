@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+setitem${1:type}(${2:${3:datawindow}.getrow()}, ${4:column}, ${5:value})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>setitem</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.pb</scope>
+</snippet>
