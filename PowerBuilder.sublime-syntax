@@ -17,7 +17,7 @@ contexts:
     - match: \b(?i:do while|loop|exit|continue)\b
       scope: keyword.control.conditional.pb
 
-    - match: \b(?i:for|to|next|exit|continue)\b
+    - match: \b(?i:for|to|next|exit|continue|step)\b
       scope: keyword.control.conditional.pb
 
     - match: \b(?i:try|catch|finally|end try)\b
@@ -32,7 +32,7 @@ contexts:
     - match: \b(?i:return)\b
       scope: keyword.control.pb
 
-    - match: \b(?i:boolean|integer|long|String|double|decimal|datawindowchild|datetime|singlelineedit)\b
+    - match: \b(?i:boolean|integer|long|number|String|double|decimal|datawindow|datastore|datawindowchild|datetime|singlelineedit|runtimeerror)\b
       scope: storage.type.pb
 
     - match: \b(?i:uo_){{ident}}\b
@@ -62,7 +62,7 @@ contexts:
     - match: \b(?i:forward|global|type|within|end type|from|variables|end variables)\b
       scope: keyword
 
-    - match: \b(?i:event|end event|constant|public|function|end function|on|end on)\b
+    - match: \b(?i:event|end event|constant|private|public|protectedwrite|function|end function|on|end on)\b
       scope: variable.function
 
     - match: (")

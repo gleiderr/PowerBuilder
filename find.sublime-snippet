@@ -1,13 +1,10 @@
 <snippet>
 	<content><![CDATA[
-if ${1:boolean_expression} then
-	$2
-else
-	$3
-end if
+find(${1:string expression}, ${2:number start}, ${3:number end})
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>if</tabTrigger>
+	<tabTrigger>find</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.pb</scope>
+	<description>dwcontrol.find(string expression, long start, long end) => long row</description>
 </snippet>

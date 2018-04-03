@@ -1,9 +1,10 @@
 <snippet>
 	<content><![CDATA[
-getitem${1:type}(${2:${3:datawindow}.getrow()}, ${4:coluna})
+getitem${1:type}(${2:long row}, ${4:string|integer column}${5:, ${6:DWBuffer dwbuffer}, ${7:boolean originalvalue}})
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>getitem</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.pb</scope>
+	<description>dwcontrol.getitem{type}(long row, string|integer column [, DWBuffer dwbuffer, boolean originalvalue]) => type value</description>
 </snippet>
