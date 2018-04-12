@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 for ${1:varname} = ${2:1} to ${3:end_statement} ${4://step increment}
-	${5:statementblock}
+	$5
 next
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

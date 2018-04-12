@@ -6,4 +6,5 @@ lower(${1:string})
 	<tabTrigger>lower</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.pb</scope>
+	<description>lower(string) => string lowered</description>
 </snippet>

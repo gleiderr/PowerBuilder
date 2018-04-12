@@ -1,10 +1,10 @@
 <snippet>
 	<content><![CDATA[
-setitem(${1:long row}, ${2:string|integer column}, ${3:any value})
+protectedwrite
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>setitem</tabTrigger>
+	<tabTrigger>protectedwrite</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.pb</scope>
-	<description>dwcontrol.setitem(long row, string|integer column, any value) => integer success</description>
+	<!-- <description></description> -->
 </snippet>

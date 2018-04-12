@@ -1,10 +1,10 @@
 <snippet>
 	<content><![CDATA[
-setitem(${1:long row}, ${2:string|integer column}, ${3:any value})
+setnull(${1:any variable})
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>setitem</tabTrigger>
+	<tabTrigger>setnull</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.pb</scope>
-	<description>dwcontrol.setitem(long row, string|integer column, any value) => integer success</description>
+	<description>setnull(any variable) => integer success</description>
 </snippet>

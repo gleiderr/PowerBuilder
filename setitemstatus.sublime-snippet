@@ -1,9 +1,10 @@
 <snippet>
 	<content><![CDATA[
-setitemstatus(${1:long row}, ${2:string/integer column}, ${3:dwbuffer dwbuffer}, ${4:dwitemstatus status})
+setitemstatus(${1:long row}, ${2:string|integer column}, ${3:dwbuffer dwbuffer}, ${4:dwitemstatus status})
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>setitemstatus</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.pb</scope>
+	<description>dwcontrol.setitemstatus(long row, string|integer column, dwbuffer dwbuffer, dwitemstatus status) => integer success</description>
 </snippet>

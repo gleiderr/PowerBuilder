@@ -6,4 +6,5 @@ getitemstatus(${1:long row}, ${2:string/integer column}, ${3:DWBuffer dwbuffer})
 	<tabTrigger>getitemstatus</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.pb</scope>
+	<description>dwcontrol.getitemstatus (long row, integer/string column, dwbuffer dwbuffer) => dwitemstatus</description>
 </snippet>

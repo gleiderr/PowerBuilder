@@ -6,4 +6,5 @@ rowscopy(${1:long startrow}, ${2:long endrow}, ${3:dwbuffer copybuffer}, ${4:dat
 	<tabTrigger>rowscopy</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.pb</scope>
+	<description>dwcontrol.rowscopy(long startrow, long endrow, dwbuffer copybuffer, datawindowchild targetdw, long beforerow, dwbuffer targetbuffer) => integer success </description>
 </snippet>
