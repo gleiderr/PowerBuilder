@@ -1,0 +1,9 @@
+{
+	"scope": "source.pb",
+	"completions":
+	[
+		{ "trigger": "getmessage\t‎throwableobject.getmessage() => string system_error", "contents": "getmessage()"},
+		{ "trigger": "getparent\tobjectname.getparent() => PowerObject parent", "contents": "getparent()"},
+		// { "trigger": "", "contents": ""},
+	]
+}
