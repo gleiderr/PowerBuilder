@@ -60,10 +60,13 @@ contexts:
       scope: punctuation.separator.continuation.pb
 
     - match: \b(?i:forward|global|type|within|end type|from|variables|end variables)\b
-      scope: keyword
+      scope: keyword.pb
 
     - match: \b(?i:event|end event|constant|private|public|protectedwrite|function|end function|on|end on)\b
-      scope: variable.function
+      scope: variable.function.pb
+
+    - match: '\.'
+      scope: punctuation.accessor.pb
 
     - match: (")
       push:
