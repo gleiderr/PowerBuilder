@@ -34,6 +34,9 @@
 		{ "trigger": "istime\tistime(string s) => boolean", "contents": "istime(${1:string s})"},
 		{ "trigger": "isvalid\tisvalid(object o) => boolean", "contents": "isvalid(${1:object o})"},
 		{ "trigger": "keydown\tkeydown(keycode k) => boolean", "contents": "keydown(${1:keycode k})"},
+		{ "trigger": "left\tleft(string s, long n) => leftmost_n char", "contents": "left(${1:string s}, ${2:long n})"},
+		{ "trigger": "len\tlen(string|blob s) => long length", "contents": "len(${1:string|blob s})"},
+		{ "trigger": "lower\tlower(string s) => string lowered", "contents": "lower(${1:string s})"},
 		// { "trigger": "", "contents": ""},
 	]
 }
