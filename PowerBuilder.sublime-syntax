@@ -69,7 +69,10 @@ contexts:
       scope: variable.function.pb
 
     - match: '\.'
-      scope: punctuation.accessor.pb
+      push:
+        - meta_scope: punctuation.accessor.pb
+        - match: '\W'
+          pop: true
 
     - match: (")
       push:

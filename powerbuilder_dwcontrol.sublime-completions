@@ -10,6 +10,14 @@
 		{ "trigger": "setsort\tdwcontrol.setsort(string format) => integer success"     , "contents": "setsort(${1:string format})"},
 		{ "trigger": "sort\tdwcontrol.sort(string format) => integer success"     		, "contents": "sort()"},
 
+		{ "trigger": "getitem\tdwcontrol.getitem(long row, string|integer column [, DWBuffer dwbuffer, boolean originalvalue]) => type value", "contents": "getitem(${1:long row}, ${2:string|integer column}${3:, ${4:DWBuffer dwbuffer}, ${5:boolean originalvalue}})" },
+		{ "trigger": "getitemdate\tdwcontrol.getitemdate(long row, string|integer column [, DWBuffer dwbuffer, boolean originalvalue]) => type value", "contents": "getitemdate(${1:long row}, ${2:string|integer column}${3:, ${4:DWBuffer dwbuffer}, ${5:boolean originalvalue}})" },
+		{ "trigger": "getitemdatetime\tdwcontrol.getitemdatetime(long row, string|integer column [, DWBuffer dwbuffer, boolean originalvalue]) => type value", "contents": "getitemdatetime(${1:long row}, ${2:string|integer column}${3:, ${4:DWBuffer dwbuffer}, ${5:boolean originalvalue}})" },
+		{ "trigger": "getitemdecimal\tdwcontrol.getitemdecimal(long row, string|integer column [, DWBuffer dwbuffer, boolean originalvalue]) => type value", "contents": "getitemdecimal(${1:long row}, ${2:string|integer column}${3:, ${4:DWBuffer dwbuffer}, ${5:boolean originalvalue}})" },
+		{ "trigger": "getitemnumber\tdwcontrol.getitemnumber(long row, string|integer column [, DWBuffer dwbuffer, boolean originalvalue]) => type value", "contents": "getitemnumber(${1:long row}, ${2:string|integer column}${3:, ${4:DWBuffer dwbuffer}, ${5:boolean originalvalue}})" },
+		{ "trigger": "getitemstring\tdwcontrol.getitemstring(long row, string|integer column [, DWBuffer dwbuffer, boolean originalvalue]) => type value", "contents": "getitemstring(${1:long row}, ${2:string|integer column}${3:, ${4:DWBuffer dwbuffer}, ${5:boolean originalvalue}})" },
+		{ "trigger": "getitemtime\tdwcontrol.getitemtime(long row, string|integer column [, DWBuffer dwbuffer, boolean originalvalue]) => type value", "contents": "getitemtime(${1:long row}, ${2:string|integer column}${3:, ${4:DWBuffer dwbuffer}, ${5:boolean originalvalue}})" },
+
 		//Documentação: PowerBuilder 12.5.2 > DataWindow Reference > Accessing Data in Code > Techniques for accessing data
 		{ "trigger": "data_column\tdwcontrol.Object.columnname{.buffer}{.datasource}{[rownum]}"									, "contents": "Object.${1:columnname}${2:.buffer}${3:.datasource}${4:[rownum]}"},
 		{ "trigger": "data_column_selected\tdwcontrol.Object.columnname{.datasource}.Selected"									, "contents": "Object.${1:columnname}${2:.datasource}.Selected"},
