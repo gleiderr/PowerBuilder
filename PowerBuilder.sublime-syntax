@@ -35,6 +35,9 @@ contexts:
     - match: \b(?i:boolean|integer|long|number|String|double|decimal|datawindow|datastore|datawindowchild|datetime|singlelineedit|runtimeerror)\b
       scope: storage.type.pb
 
+    - match: \b(?i:this|super)\b
+      scope: variable.language.pb
+
     - match: \b(?i:uo_){{ident}}\b
       scope: storage.type.pb
 
