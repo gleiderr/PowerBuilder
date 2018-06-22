@@ -1,5 +1,5 @@
 {
-	"scope": "punctuation.accessor.pb",
+	"scope": "variable.pb",
 	"completions":
 	[
 		//Documentação: PowerBuilder 12.5.2 > DataWindow Reference > Methods for the DataWindow Control
