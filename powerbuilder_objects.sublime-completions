@@ -1,5 +1,5 @@
 {
-	"scope": "source.pb",
+	"scope": "variable.pb",
 	"completions":
 	[
 		{ "trigger": "getmessage\t‎throwableobject.getmessage() => string system_error", "contents": "getmessage()"},

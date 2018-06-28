@@ -32,11 +32,15 @@
 		{ "trigger": "describe_coltype\tdwcontrol.describe('controlname.ColType') => string value", "contents": "describe('${1:controlname}.ColType')"},
 		{ "trigger": "describe_column_count\tdwcontrol.describe('Datawindow.Column.Count') => string value", "contents": "describe('Datawindow.Column.Count')"},
 		{ "trigger": "describe_dbname\tdwcontrol.describe('columnname.dbName') => string value", "contents": "describe('${1:columnname}.dbName')"},
+		{ "trigger": "describe_expression\tdwcontrol.describe('computefield.expression') => string value", "contents": "describe('${1:computefield}.expression')"},
 		{ "trigger": "describe_key\tdwcontrol.describe('columnname.Key') => string 'Yes'|'No'", "contents": "describe('${1:columnname}.Key')"},
 		{ "trigger": "describe_name\tdwcontrol.describe('columnname.Name') => string value", "contents": "describe('${1:columnname}.Name')"},
 		{ "trigger": "describe_protect\tdwcontrol.describe('columnname.protect') => string value", "contents": "describe('${1:columnname}.protect')"},
 		{ "trigger": "describe_required\tdwcontrol.describe('columnname.edit.required') => string value", "contents": "describe('${1:columnname}.edit.required')"},
 		{ "trigger": "describe_select\tdwcontrol.describe('datawindow.table.select') => string value", "contents": "describe('datawindow.table.select')"},
 		{ "trigger": "describe_tag\tdwcontrol.describe('controlname.Tag') => string value", "contents": "describe('${1:controlname}.Tag')"},
+		
+		{ "trigger": "modify_select\tdwcontrol.modify('datawindow.table.select') => string value", "contents": "modify('datawindow.table.select=~'' + ${1:query} + '~'')"},
+		{ "trigger": "modify_expression\tdwcontrol.modify('computefield.expression') => string value", "contents": "modify('${1:computefield}.expression=~\"~'' + ${2:exp} + '~'~\"')"},
 	]
 }
