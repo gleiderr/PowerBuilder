@@ -10,7 +10,6 @@
 		{ "trigger": "setsort\tdwcontrol.setsort(string format) => integer success"     , "contents": "setsort(${1:string format})"},
 		{ "trigger": "sort\tdwcontrol.sort(string format) => integer success"     		, "contents": "sort()"},
 
-		{ "trigger": "getitem\tdwcontrol.getitem(long row, string|integer column [, DWBuffer dwbuffer, boolean originalvalue]) => type value", "contents": "getitem(${1:long row}, ${2:string|integer column}${3:, ${4:DWBuffer dwbuffer}, ${5:boolean originalvalue}})" },
 		{ "trigger": "getitemdate\tdwcontrol.getitemdate(long row, string|integer column [, DWBuffer dwbuffer, boolean originalvalue]) => type value", "contents": "getitemdate(${1:long row}, ${2:string|integer column}${3:, ${4:DWBuffer dwbuffer}, ${5:boolean originalvalue}})" },
 		{ "trigger": "getitemdatetime\tdwcontrol.getitemdatetime(long row, string|integer column [, DWBuffer dwbuffer, boolean originalvalue]) => type value", "contents": "getitemdatetime(${1:long row}, ${2:string|integer column}${3:, ${4:DWBuffer dwbuffer}, ${5:boolean originalvalue}})" },
 		{ "trigger": "getitemdecimal\tdwcontrol.getitemdecimal(long row, string|integer column [, DWBuffer dwbuffer, boolean originalvalue]) => type value", "contents": "getitemdecimal(${1:long row}, ${2:string|integer column}${3:, ${4:DWBuffer dwbuffer}, ${5:boolean originalvalue}})" },
