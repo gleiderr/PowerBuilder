@@ -32,7 +32,7 @@ contexts:
     - match: \b(?i:return)\b
       scope: keyword.control.pb
 
-    - match: \b(?i:boolean|integer|long|number|String|double|decimal|datawindow|datastore|datawindowchild|datetime|singlelineedit|runtimeerror)\b
+    - match: \b(?i:boolean|integer|long|number|String|double|decimal|datawindow|datastore|datawindowchild|datetime|date|time|singlelineedit|runtimeerror)\b
       scope: storage.type.pb
 
     - match: \b(?i:this|super)\b
