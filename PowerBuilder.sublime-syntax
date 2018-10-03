@@ -17,6 +17,9 @@ contexts:
     - match: \b(?i:do while|loop|exit|continue)\b
       scope: keyword.control.conditional.pb
 
+    - match: \b(?i:do|loop while|exit|continue)\b
+      scope: keyword.control.conditional.pb
+
     - match: \b(?i:for|to|next|exit|continue|step)\b
       scope: keyword.control.conditional.pb
 
